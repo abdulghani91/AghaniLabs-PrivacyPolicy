@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for AGhani Labs Android Apps">
+  <title>Privacy Policy - AGhani Labs</title>
+  <style>
+    :root {
+      --primary: #4A90D9;
+      --accent: #2ecc71;
+      --text: #1a1a1a;
+      --text-secondary: #555;
+      --bg: #ffffff;
+      --bg-secondary: #f8f9fa;
+      --border: #e0e0e0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #e0e0e0;
+        --text-secondary: #aaa;
+        --bg: #0d1117;
+        --bg-secondary: #161b22;
+        --border: #30363d;
+      }
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .brand-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .logo-icon {
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, #4A90D9, #2ecc71);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-icon svg {
+      width: 30px;
+      height: 30px;
+      fill: white;
+    }
+
+    .brand-name {
+      font-size: 1.8rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #4A90D9, #2ecc71);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .subtitle {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      margin-bottom: 12px;
+    }
+
+    .last-updated {
+      display: inline-block;
+      background: var(--bg-secondary);
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+    }
+
+    .apps-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin: 20px 0 0;
+    }
+
+    .app-badge {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin: 40px 0 14px;
+      color: var(--text);
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--primary);
+      display: inline-block;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 24px 0 10px;
+      color: var(--text);
+    }
+
+    p { margin-bottom: 14px; color: var(--text-secondary); }
+
+    ul, ol {
+      margin: 12px 0 14px 24px;
+      color: var(--text-secondary);
+    }
+
+    li { margin-bottom: 7px; }
+
+    .highlight-box {
+      background: var(--bg-secondary);
+      border-left: 4px solid var(--primary);
+      padding: 18px 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 20px 0;
+    }
+
+    .highlight-box p:last-child { margin-bottom: 0; }
+
+    .texas-box {
+      background: var(--bg-secondary);
+      border-left: 4px solid var(--accent);
+      padding: 18px 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 20px 0;
+    }
+
+    .texas-box p:last-child { margin-bottom: 0; }
+
+    .warning-box {
+      background: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 18px 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 20px 0;
+    }
+
+    .warning-box p { color: #856404; margin-bottom: 0; }
+
+    @media (prefers-color-scheme: dark) {
+      .warning-box { background: #3d3a20; }
+      .warning-box p { color: #e0d8b0; }
+    }
+
+    .apps-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.95rem;
+    }
+
+    .apps-table th {
+      background: var(--bg-secondary);
+      padding: 10px 14px;
+      text-align: left;
+      color: var(--text);
+      font-weight: 600;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .apps-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-secondary);
+    }
+
+    .apps-table tr:last-child td { border-bottom: none; }
+
+    .contact-info {
+      background: var(--bg-secondary);
+      padding: 24px;
+      border-radius: 12px;
+      margin-top: 32px;
+    }
+
+    .contact-info h3 { margin-top: 0; }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+    }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { color: var(--text); font-weight: 600; }
+
+    @media (max-width: 600px) {
+      .container { padding: 24px 16px; }
+      h1 { font-size: 1.5rem; }
+      h2 { font-size: 1.2rem; }
+      .apps-table { font-size: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <div class="brand-logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <span class="brand-name">AGhani Labs</span>
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">This policy applies to all apps published by AGhani Labs on Google Play</p>
+      <div class="last-updated">Last Updated: June 3, 2026</div>
+      <div class="apps-grid">
+        <span class="app-badge">📐 Unitr</span>
+        <span class="app-badge">⚖️ BMI Calculator</span>
+        <span class="app-badge">🧰 ToolKit Master</span>
+        <span class="app-badge">🖼️ PixelKit</span>
+        <span class="app-badge">🎬 MediaKit Pro</span>
+        <span class="app-badge">📄 PDFMaster</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>1. Introduction</h2>
+      <p>
+        Abdulghani Mawlood, operating under the brand <strong>AGhani Labs</strong>, develops and publishes Android applications on the Google Play Store.
+        This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use any of our apps.
+      </p>
+      <p>
+        We respect your privacy and are committed to protecting your personal data.
+        Please read this Privacy Policy carefully. If you do not agree with its terms, please do not use our apps.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Apps Covered by This Policy</h2>
+      <p>This Privacy Policy applies to all AGhani Labs apps, including but not limited to:</p>
+      <table class="apps-table">
+        <thead>
+          <tr>
+            <th>App Name</th>
+            <th>Package ID</th>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Unitr – Unit Converter</td>
+            <td>com.aghanilabs.unitr</td>
+            <td>Utility</td>
+          </tr>
+          <tr>
+            <td>BMI Calculator</td>
+            <td>com.aghani.bmi_calculator</td>
+            <td>Health & Fitness</td>
+          </tr>
+          <tr>
+            <td>ToolKit Master</td>
+            <td>com.aghanilabs.toolkitmaster</td>
+            <td>Utility</td>
+          </tr>
+          <tr>
+            <td>PixelKit</td>
+            <td>com.aghanilabs.pixelkit</td>
+            <td>Photography</td>
+          </tr>
+          <tr>
+            <td>MediaKit Pro</td>
+            <td>com.aghanilabs.mediakitpro</td>
+            <td>Media</td>
+          </tr>
+          <tr>
+            <td>PDFMaster</td>
+            <td>com.aghanilabs.pdfmaster</td>
+            <td>Productivity</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Any new apps released by AGhani Labs will also be covered under this policy unless a separate policy is explicitly provided.</p>
+    </section>
+
+    <section>
+      <h2>3. Information We Collect</h2>
+
+      <h3>3.1 Information You Provide</h3>
+      <p>
+        Our apps are designed to work <strong>without requiring any personal information</strong> from you.
+        We do not ask for your name, email address, phone number, or any other personally identifiable information.
+      </p>
+
+      <h3>3.2 Data Stored Locally on Your Device</h3>
+      <div class="highlight-box">
+        <p><strong>Local Storage Only:</strong> Any preferences, history, favorites, or settings you create within our apps (such as conversion history in Unitr or theme preferences) are stored <strong>locally on your device</strong> using Android's SharedPreferences or local databases. This data never leaves your device and is not transmitted to our servers.</p>
+      </div>
+
+      <h3>3.3 Device & Advertising Data</h3>
+      <p>Some of our apps use Google AdMob for advertising. In those apps, the following non-personal data may be collected automatically:</p>
+      <ul>
+        <li>Device model and operating system version</li>
+        <li>Device Advertising ID (for ad personalization and analytics)</li>
+        <li>App version and usage statistics</li>
+        <li>Ad interaction data (impressions, clicks)</li>
+        <li>Approximate location (IP-based, for regional ad targeting)</li>
+        <li>Crash reports and performance data</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Advertising & Third-Party Services</h2>
+
+      <h3>4.1 Google AdMob</h3>
+      <p>
+        Some AGhani Labs apps use <strong>Google AdMob</strong> to display advertisements.
+        AdMob may collect device and usage data to serve personalized or non-personalized ads.
+        You can opt out of personalized advertising at any time:
+      </p>
+      <ul>
+        <li>Android: Settings → Google → Ads → Opt out of Ads Personalization</li>
+        <li>Via <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Ads Settings</a></li>
+      </ul>
+      <p>
+        For more information on how Google uses data:
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> |
+        <a href="https://developers.google.com/admob/android/privacy" target="_blank" rel="noopener">AdMob Privacy</a>
+      </p>
+
+      <h3>4.2 Google Play Services</h3>
+      <p>All our apps use Google Play Services for distribution, updates, and crash reporting. Google Play Services operates under <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+    </section>
+
+    <section>
+      <h2>5. How We Use Your Information</h2>
+      <p>We use collected information to:</p>
+      <ul>
+        <li>Provide and maintain each app's core functionality</li>
+        <li>Save your preferences and history locally on your device</li>
+        <li>Improve and optimize app performance</li>
+        <li>Display relevant advertisements (in apps with ads enabled)</li>
+        <li>Diagnose and fix crashes or technical issues</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Data Storage & Security</h2>
+
+      <h3>6.1 Local Storage</h3>
+      <p>
+        All user-generated data (history, favorites, preferences) is stored <strong>locally on your device</strong>.
+        We do not operate any remote servers that store your personal data.
+        Uninstalling any of our apps will permanently remove all locally stored data.
+      </p>
+
+      <h3>6.2 Clipboard Access</h3>
+      <p>
+        Some apps allow you to copy results to your device clipboard. This is always a <strong>user-initiated action</strong>.
+        We do not access, read, or monitor your clipboard at any other time.
+      </p>
+
+      <h3>6.3 Security</h3>
+      <p>
+        We implement appropriate technical measures to protect your information.
+        However, no method of electronic storage is 100% secure, and we cannot guarantee absolute security.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Your Data Protection Rights</h2>
+
+      <h3>7.1 General Rights</h3>
+      <ul>
+        <li><strong>Access & Deletion:</strong> You can clear your data at any time within each app's settings</li>
+        <li><strong>Correction:</strong> You can modify your preferences through each app's settings screen</li>
+        <li><strong>Full Removal:</strong> Uninstalling the app removes all locally stored data permanently</li>
+      </ul>
+
+      <h3>7.2 GDPR Rights (EU/EEA Users)</h3>
+      <p>If you are a resident of the European Economic Area, you have the right to access, update, delete, restrict, port, and withdraw consent for your data. Since all data is stored locally on your device, you have complete control at all times.</p>
+
+      <h3>7.3 Opting Out of Ad Personalization</h3>
+      <p>You can opt out of personalized ads through your Android device settings or via <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Ads Settings</a>.</p>
+    </section>
+
+    <section>
+      <h2>8. Children's Privacy</h2>
+      <p>
+        Our apps are not intended for use by children under the age of 13 (or 16 in the EU).
+        We do not knowingly collect personally identifiable information from children.
+        If you are a parent or guardian and believe your child has provided us with personal information,
+        please contact us at <a href="mailto:aghani.labs@gmail.com">aghani.labs@gmail.com</a> so we can take appropriate action.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. U.S. State Age Verification Laws (Texas SB 2420)</h2>
+      <p>
+        In compliance with Texas' App Store Accountability Act (Texas SB 2420) and similar laws in other U.S. states,
+        Google Play may provide our apps with age signals indicating a user's age range or parental consent status
+        for users in applicable states.
+      </p>
+      <div class="texas-box">
+        <p><strong>How we handle age signals:</strong> If any of our apps receive age or parental consent signals from Google Play,
+        we use this information solely to ensure the app functions appropriately for the user's age group.
+        We do not retain, store, sell, or share this data with any third parties.
+        Any such data is deleted immediately after the required verification process is complete,
+        in accordance with applicable law.</p>
+      </div>
+      <p>
+        All AGhani Labs apps are general utility, productivity, or health tools with no age-restricted content.
+        We do not restrict access based on age signals beyond what is required by applicable law.
+      </p>
+    </section>
+
+    <section>
+      <h2>10. International Data Transfers</h2>
+      <p>
+        Data collected by third-party services such as Google AdMob may be transferred to and processed in
+        the United States or other countries. These transfers are governed by the respective third-party privacy policies.
+        We encourage you to review <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> for details.
+      </p>
+    </section>
+
+    <section>
+      <h2>11. Changes to This Privacy Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. Changes will be posted at this page with an updated "Last Updated" date.
+        You are advised to review this policy periodically. Continued use of our apps after changes are posted constitutes your acceptance of the updated policy.
+      </p>
+    </section>
+
+    <section>
+      <h2>12. Consent</h2>
+      <p>
+        By using any AGhani Labs app, you consent to this Privacy Policy and agree to its terms.
+        All our apps comply with the Google Play Developer Program Policies and all applicable data protection laws and regulations.
+      </p>
+    </section>
+
+    <div class="contact-info">
+      <h3>Contact Us</h3>
+      <p>If you have any questions about this Privacy Policy, please contact us:</p>
+      <ul>
+        <li><strong>Developer:</strong> Abdulghani Mawlood</li>
+        <li><strong>Brand:</strong> AGhani Labs</li>
+        <li><strong>Email:</strong> <a href="mailto:aghani.labs@gmail.com">aghani.labs@gmail.com</a></li>
+        <li><strong>Google Play:</strong> <a href="https://play.google.com/store/apps/developer?id=AGhani+Labs" target="_blank" rel="noopener">AGhani Labs on Google Play</a></li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>© 2026 AGhani Labs · Abdulghani Mawlood · All rights reserved.</p>
+      <p style="margin-top:8px;">This Privacy Policy is effective as of June 3, 2026.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
